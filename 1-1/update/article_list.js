@@ -25,6 +25,7 @@ function readArticleList(url,callback){
 			};
 			//从URL中取出文章的ID
 			var s = item.url.match(/blog_([a-zA-Z0-9]+)\.html/);
+			//console.log(s);
 			if(Array.isArray(s)){
 				item.id = s[1];
 				articleList.push(item);
